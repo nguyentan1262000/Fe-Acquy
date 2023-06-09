@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.4.0-web/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <a href="">
+            <img src="./img/bao duong sua chua/logo.webp" alt="logo" />
+          </a>
+        </div>
+        <div class="header-right">
+          <nav id="nav-menu" class="menu">
+            <ul>
+              <li>
+                <a href="http://127.0.0.1:5500/index.html" class="menu-item"
+                  >TRANG CHỦ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://127.0.0.1:5500/gioi-thieu.html"
+                  class="menu-item"
+                  >GIỚI THIỆU</a
+                >
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/san-pham.html" class="menu-item"
+                  >SẢN PHẨM</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://127.0.0.1:5500/tai-tai-lieu.html"
+                  class="menu-item"
+                  >TẢI TÀI LIỆU</a
+                >
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/tin-tuc.html" class="menu-item"
+                  >TIN TỨC</a
+                >
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/hoi-dap.html" class="menu-item"
+                  >HỎI ĐÁP</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://127.0.0.1:5500/lien-he.html"
+                  class="menu-item active"
+                  >LIÊN HỆ</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="header-search">
+            <img
+              class="header-search-icon"
+              src="./img/bao duong sua chua/icon-search.png"
+              alt="search"
+            />
+            <input id="input-search" type="text" placeholder="Tìm kiếm" />
+          </div>
+          <div class="language">
+            <img src="./img/bao duong sua chua/icon-vn.png" alt="vn" />
+            <img src="./img/icon-en.webp" alt="eng" />
+          </div>
+          <div id="tab" class="tabbar-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="sync1" class="banner">
+      <img class="banner-item" src="./img/lien-he/banner.webp" alt="" />
+    </div>
+    <div class="about">
+      <div class="about-left">
+        <div class="about-title">CÔNG TY TNHH GIẢI PHÁP ĐÔ THỊ NAM HẢI</div>
+        <div class="about-left-address">
+          <div class="address">
+            <img src="./img/lien-he/icon-home.webp" alt="" />
+            <div class="content-text">
+              <span>Trụ sở chính:</span>
+              <span class="text"
+                >Số 33 Ngõ 151 Láng Hạ, Phường Láng Hạ, Quận Đống Đa, TP Hà
+                Nội</span
+              >
+            </div>
+          </div>
+          <div class="location">
+            <img src="./img/lien-he/icon-location.webp" alt="" />
+            <div class="content-text">
+              <span>VPGD:</span>
+              <span class="text"
+                >Phòng 302, Tầng 3, Tòa nhà G2 Số 03 Thành công, Ba Đình, Hà
+                Nội</span
+              >
+            </div>
+          </div>
+          <div class="phone-number">
+            <img src="./img/lien-he/icon-phone.webp" alt="" />
+            <div class="content-text">
+              <span>Tel:</span>
+              <span class="text">(84-24) 3537 6499</span>
+              <span> - </span>
+              <span>Hotline:</span>
+              <span class="text">(84) 982225677</span>
+            </div>
+          </div>
+          <div class="email">
+            <img src="./img/lien-he/icon-email.webp" alt="" />
+            <div class="content-text">
+              <span>Email:</span>
+              <span class="text">jk@namhailogistic.com</span>
+            </div>
+          </div>
+          <div class="websize">
+            <img src="./img/lien-he/icon-internet.webp" alt="" />
+            <div class="content-text">
+              <span>website:</span>
+              <span class="text">www.greenery.vn</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-submit">
+          <div class="about-title">GỬI THÔNG TIN LIÊN HỆ</div>
+          <form id="formPostInfo" action="" method="post">
+            <input
+              class="input-item"
+              name="fullname"
+              type="text"
+              placeholder="Họ tên (*)"
+            />
+            <input
+              class="input-item"
+              name="nameCompany"
+              type="text"
+              placeholder="Công ty"
+            />
+            <input
+              class="input-item"
+              name="phoneNumber"
+              type="text"
+              placeholder="Điện thoại"
+            />
+            <input
+              class="input-item"
+              name="email"
+              type="text"
+              placeholder="Email"
+            />
+            <input
+              class="input-item"
+              name="address"
+              type="text"
+              placeholder="Địa chỉ"
+            />
+            <input
+              class="input-item"
+              name="title"
+              type="text"
+              placeholder="Tiêu đề"
+            />
+            <textarea
+              name="content"
+              id="input-item-last"
+              cols="30"
+              rows="10"
+              placeholder="Nội dung liên hệ"
+              required
+            ></textarea>
+            <a href="" class="btn-submit">GỬI ĐI</a>
+          </form>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d119211.64338890182!2d105.72171486309551!3d20.978046982224264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zUGjDsm5nIDMwMiwgVOG6p25nIDMsIFTDsmEgbmjDoCBHMiBT4buRIDAzIFRow6BuaCBjw7RuZywgQmEgxJDDrG5oLCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1684142317876!5m2!1svi!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="tap-body">
+      <a href="tel:+0982225677" title="098 222 5677" class="tap-icon-phone">
+        <img src="./img/bao duong sua chua/icon-phone-call.png" alt="" />
+        <div class="bg-ring"></div>
+      </a>
+      <a href="#" class="tap-icon-message">
+        <img src="./img/bao duong sua chua/icon-message.png" alt="" />
+      </a>
+      <a href="#" class="tap-icon-zalo">
+        <img src="./img/bao duong sua chua/icon-zalo.png" alt="icon-zalo" />
+      </a>
+      <a href="#top" class="tap-up-page">
+        <img src="./img/bao duong sua chua/icon-tap-top.webp" alt="" />
+      </a>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="footer-top">
+          <div class="footer-top-left">
+            <img src="./img/bao duong sua chua/logo.webp" alt="" />
+            <div class="footer-top-left-text">
+              CÔNG TY TNHH GIẢI PHÁP ĐÔ THỊ NAM HẢI
+            </div>
+          </div>
+          <div class="footer-top-right">
+            <a href="" class="footer-top-right-item">
+              <img src="./img/bao duong sua chua/icon-fb.webp" alt="" />
+            </a>
+            <a href="" class="footer-top-right-item">
+              <img src="./img/bao duong sua chua/icon-instagram.webp" alt="" />
+            </a>
+            <a href="" class="footer-top-right-item">
+              <img src="./img/bao duong sua chua/icon-youtube.webp" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-md">
+          <div class="footer-md-left">
+            <div class="footer-md-left-item">
+              <div class="footer-md-left-item-title">Địa chỉ:</div>
+              <div class="footer-md-left-item-text">
+                Phòng 302, Tầng 3, Tòa nhà G2 Số 03 Thành công, Ba Đình, Hà Nội
+              </div>
+            </div>
+            <div class="footer-md-left-item">
+              <div class="footer-md-left-item-tel">
+                <div class="footer-md-left-item-title">Tel:</div>
+                <a href="tel:+02435376499" class="footer-md-left-item-text"
+                  >(84-24) 3537 6499</a
+                >
+              </div>
+              <div>-</div>
+              <div class="footer-md-left-item-hotline">
+                <div class="footer-md-left-item-title">Hotline:</div>
+                <a href="tel:+0982225677" class="footer-md-left-item-text"
+                  >(84) 982225677</a
+                >
+              </div>
+            </div>
+            <div class="footer-md-left-item">
+              <div class="footer-md-left-item-title">Fax:</div>
+              <a href="tel:+0435376490" class="footer-md-left-item-text"
+                >(84-4) 3537 6490</a
+              >
+            </div>
+            <div class="footer-md-left-item">
+              <div class="footer-md-left-item-title">Email:</div>
+              <a href="#" class="footer-md-left-item-text"
+                >jk@namhailogistic.com</a
+              >
+            </div>
+            <div class="footer-md-left-item">
+              <div class="footer-md-left-item-title">VPĐD:</div>
+              <div class="footer-md-left-item-text">
+                Số 349, Quốc Lộ 1A, Phường An Phú Đông, Quận 12, HCM
+              </div>
+            </div>
+            <div class="footer-md-left-item">
+              <div class="footer-md-left-item-title">Tel:</div>
+              <a href="tel:+02837020168" class="footer-md-left-item-text"
+                >0283 7020 168</a
+              >
+            </div>
+          </div>
+          <div class="footer-md-right">
+            <div class="footer-md-right-row">
+              <div class="footer-md-right-row-top">VỀ CHÚNG TÔI</div>
+              <div class="footer-md-right-row-bottom">
+                <ul>
+                  <li>
+                    <a href="" class="footer-md-right-item">Giới thiệu chung</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-md-right-item">Tầm nhìn sứ mệnh</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-md-right-item"
+                      >Lịch sử phát triển</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="footer-md-right-item"
+                      >Chứng nhận tiêu chuẩn</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-md-right-row">
+              <div class="footer-md-right-row-top">SẢN PHẨM</div>
+              <div class="footer-md-right-row-bottom">
+                <ul>
+                  <li>
+                    <a href="" class="footer-md-right-item"
+                      >Máy nạp và phụ kiện</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="footer-md-right-item">Ắc quy xe nâng</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-md-right-item">Cho thuê xe nâng</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-md-right-row">
+              <div class="footer-md-right-row-top">DANH MỤC</div>
+              <div class="footer-md-right-row-bottom">
+                <ul>
+                  <li>
+                    <a href="" class="footer-md-right-item">Tải tài liệu</a>
+                  </li>
+                  <li><a href="" class="footer-md-right-item">Tin tức</a></li>
+                  <li><a href="" class="footer-md-right-item">Hỏi đáp</a></li>
+                  <li><a href="" class="footer-md-right-item">Liên hệ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-text">
+          Copyright © 2013 NAMHAI USC Co., Thiết kế web bởi công ty thiết kế
+          website ADC
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>

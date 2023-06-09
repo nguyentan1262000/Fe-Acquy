@@ -1,0 +1,85 @@
+@import "./variable";
+@mixin title($size, $color) {
+  width: 100%;
+  font-size: $size;
+  color: $color;
+  text-align: center;
+  font-family: bold;
+}
+@mixin fonttext($ff, $fz, $color) {
+  font-family: $ff;
+  font-size: $fz;
+  color: $color;
+}
+@mixin productbox() {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin btnProduct {
+  @include flexcenter;
+  flex-direction: row;
+  gap: 15px;
+  padding: 2px 20px;
+  background: $--main-color;
+  border: 1px solid $--main-color;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.1s;
+  .btn-text {
+    font-family: bold;
+    font-size: 15px;
+    color: white;
+  }
+  &:hover {
+    background: #fff;
+    .btn-text {
+      color: $--main-color;
+    }
+  }
+}
+@mixin flexcolums($number, $_gap) {
+  @if ($number == 1) {
+    display: flex;
+    flex-direction: column;
+    gap: $_gap;
+  }
+  @if ($number == 2) {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: $_gap;
+  }
+}
+@mixin flexrow($number, $_gap) {
+  @if ($number == 1) {
+    display: flex;
+    flex-direction: row;
+    gap: $_gap;
+  }
+  @if ($number == 2) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: $_gap;
+  }
+}
+
+@mixin productItem($number, $width, $_gap) {
+  width: $width;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: $_gap;
+  @if ($number == 1) {
+    flex-direction: column;
+  }
+  @if ($number == 2) {
+    flex-direction: row;
+  }
+}
